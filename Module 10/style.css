@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #87CEFA, #B0E0E6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .form-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .form-header .form-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .form-header .form-subtitle {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  .progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: #ddd;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  
+  .progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step-number {
+    background: #ddd;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .progress-step.active .step-number {
+    background: #4682B4;
+    color: white;
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.8);
+  }
+  
+  .step-text {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  /* Form Fields */
+  .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .select-wrapper, .date-wrapper {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .select-wrapper:hover, .date-wrapper:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  select, input[type="date"] {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .form-tip {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background: linear-gradient(to right, #4682B4, #5F9EA0);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to right, #4169E1, #4682B4);
+    transform: translateY(-2px);
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .button-icon {
+    font-size: 18px;
+  }
+  
+  /* Form Footer */
+  .form-footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+  }
+  
